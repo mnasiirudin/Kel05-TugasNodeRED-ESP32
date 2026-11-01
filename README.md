@@ -51,7 +51,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | **Ruang 1** | SHT40 (SDA: GPIO21, SCL: GPIO22) | GPIO 14 | GPIO 27 |
 | **Ruang 2** | SHT30 (SDA: GPIO21, SCL: GPIO22) | GPIO 14 | GPIO 27 |
 | **Ruang 3** | Potensiometer 1 (ADC: GPIO34), Potensiometer (ADC: GPIO34) | GPIO 14 | GPIO 27 |
-| **Ruang 4** | DHT22 (GPIO 4) | GPIO 2 | GPIO 8 |
+| **Ruang 4** | DHT22 (GPIO 3) | GPIO 2 | GPIO 8 |
 
 **Foto Rangkaian (Satu Ruangan):**
 ![Foto Rangkaian](docs/images/rangkaian_ruang.png)
