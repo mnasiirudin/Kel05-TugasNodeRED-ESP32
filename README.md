@@ -1,10 +1,8 @@
-# 1. Judul dan Deskripsi Sistem
-
-**Sistem Monitoring dan Kontrol Suhu Ruangan (Kelompok 5)**
+# **Sistem Monitoring dan Kontrol Suhu Ruangan (Kelompok 5)**
 
 Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *real-time*, serta mengendalikan aktuator (AC dan Heater) pada berbagai ruangan. Sistem ini menggunakan mikrokontroler ESP32 yang mengirim dan menerima data melalui *broker* MQTT lokal berkeamanan (*authentication*), yang kemudian divisualisasikan pada *dashboard* Node-RED dan riwayatnya disimpan dalam basis data SQLite.
 
-## 2. Anggota Kelompok
+## Anggota Kelompok
 
 | Nama | NRP | Ruangan yang Dipegang |
 |---|---|---|
@@ -13,12 +11,12 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | Efendi Choiri S | 2124600084 | Ruang 3 |
 | [Nama Anggota 4] | [NRP] | [Misal: Ruang 4] |
 
-## 3. Link Video
+## Link Video
 
 * **Video Presentasi:** [Masukkan Link Video Presentasi di Sini](#)
 * **Video Demo:** [Masukkan Link Video Demo di Sini](#)
 
-## 4. Arsitektur Sistem
+## Arsitektur Sistem
 
 ```text
 [Node ESP32 + Sensor DHT22 + LED] 
@@ -34,24 +32,36 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 ```
 *(Atau ganti blok teks di atas dengan memanggil gambar arsitektur: `![Arsitektur](docs/images/arsitektur.png)`)*
 
-## 5. Perangkat Keras
+## Hardware
 
 **Daftar Komponen:**
-* ESP32 devkit v1(Ruang 1-3)
-* Esp32 C3 Super Mini(Ruang 4)
-* Sensor Suhu & Kelembapan (DHT11 / DHT22)
-* LED (Indikator AC)
-* LED (Indikator Heater)
-* Resistor & Kabel Jumper
-* Breadboard
+* Ruang 1
+  *  ESP32 devkit v1
+  *  SHT40
+* Ruang 2
+  *  ESP32 devkit v1
+  *  SHT30
+* Ruang 3
+  *  ESP32 devkit v1
+  *  Potensiometer(Simulasi Suhu)
+  *  Potensiometer(Simulasi Kelembaban)
+* Ruang 4
+  *  Esp32 C3 Super Mini
+  *  DHT22
+* Komponen Pendukung
+  * LED 1
+  * LED 2
+  * Resistor & Kabel Jumper
+  * Breadboard
 
 **Tabel Pin:**
 
-| Komponen | Pin ESP32 |
-|---|---|
-| Sensor DHT | [Isi Pin, misal: D4] |
-| LED AC | [Isi Pin] |
-| LED Heater | [Isi Pin] |
+| Ruangan / Node | Board | Sensor / Input | Lampu 1 (Pin & Modus) | Lampu 2 (Pin & Modus) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ruang 1** | ESP32 Dev Module | SHT40 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 2** | ESP32 Dev Module | SHT30 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 3** | ESP32 Dev Module | Potensiometer (ADC: GPIO34) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 4 (`esp32c3`)** | ESP32-C3 SuperMini | DHT22 (Data: GPIO 4) | GPIO 5 (*Active HIGH*) | GPIO 6 (*Active LOW*) |
 
 **Foto Rangkaian (Satu Ruangan):**
 ![Foto Rangkaian](docs/images/rangkaian_ruang.png)
