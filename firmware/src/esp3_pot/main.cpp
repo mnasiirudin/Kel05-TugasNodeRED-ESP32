@@ -5,9 +5,9 @@
 
 #define KELOMPOK "klp5"
 #define ROOM "ruang3"
-#define WIFI_SSID "T1"
-#define WIFI_PASS "00000000"
-#define BROKER_IP "192.168.137.1"
+#define WIFI_SSID "SSID_LAB"
+#define WIFI_PASS "PASSWORD_LAB"
+#define BROKER_IP "IPLAPTOP"
 #define MQTT_USER "klp5"
 #define MQTT_PASS "klp5"
 
