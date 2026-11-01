@@ -59,7 +59,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 ## 6. Tabel Topic Final dan Broker
 
-* **Broker yang dipakai:** Mosquitto Localhost (Autentikasi aktif: `allow_anonymous false` & `password_file`).
+* **Broker yang dipakai:** Mosquitto Localhost
 
 | Aktuator/Sensor | Topic MQTT | Keterangan |
 |---|---|---|
@@ -67,8 +67,6 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | Sensor Kelembapan | `pens/klp5/ruang1/humidity` | Publish dari ESP32 |
 | Kontrol AC | `pens/klp5/ruang1/ac` | Subscribe dari Node-RED |
 | Kontrol Heater | `pens/klp5/ruang1/heater` | Subscribe dari Node-RED |
-
-*(Catatan: Ganti `ruang1` dengan kode ruangan masing-masing: ruang2, ruang3, ruang4).*
 
 ## 7. Cara Menjalankan
 
