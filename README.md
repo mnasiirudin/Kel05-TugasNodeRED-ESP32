@@ -8,9 +8,9 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 | Nama | NRP | Ruangan yang Dipegang |
 |---|---|---|
-| [Nama Anggota 1] | [NRP] | [Misal: Ruang 1] |
-| [Nama Anggota 2] | [NRP] | [Misal: Ruang 2] |
-| [Nama Anggota 3] | [NRP] | [Misal: Ruang 3] |
+| M. Nasirudin | 2124600062 | Ruang 4 |
+| Helmi Zavelda P | 2124600064 | Ruang 2 |
+| Efendi Choiri S | 2124600084 | Ruang 3 |
 | [Nama Anggota 4] | [NRP] | [Misal: Ruang 4] |
 
 ## 3. Link Video
@@ -37,7 +37,8 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 ## 5. Perangkat Keras
 
 **Daftar Komponen:**
-* Mikrokontroler ESP32
+* ESP32 devkit v1(Ruang 1-3)
+* Esp32 C3 Super Mini(Ruang 4)
 * Sensor Suhu & Kelembapan (DHT11 / DHT22)
 * LED (Indikator AC)
 * LED (Indikator Heater)
