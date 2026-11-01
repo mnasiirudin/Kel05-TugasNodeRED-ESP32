@@ -11,15 +11,6 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | Efendi Choiri S | 2124600084 | Ruang 3 |
 | Mochamad Nizar Abrar | 2124600075 |  |
 
-## Pembagian Tugas Anggota
-
-| Nama Anggota | Tugas & Bagian Pekerjaan |
-|---|---|
-| M. Nasirudin | Mengerjakan Program ruang 1 sd 4 |
-| Helmi Zavelda P | Mengerjakan Flow Node-RED |
-| Efendi Choiri S | Mengerjakan Hardware ruang 1 sd 4 |
-| Mochamad Nizar Abrar |  |
-
 ## Link Video
 
 * **Video Presentasi:** [Masukkan Link Video Presentasi di Sini](#)
@@ -145,3 +136,12 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
   * **Solusi:** Membuat tabel secara manual terlebih dahulu di dalam terminal SQLite dengan mengeksekusi perintah CREATE TABLE riwayat_suhu (...) untuk mendefinisikan struktur tabel sebelum melakukan query SELECT.
 * **Kendala:**  Koneksi ke broker Mosquitto ditolak karena password yang digunakan hanya berupa dua spasi kosong.
   * **Solusi:** Mengganti password tersebut dengan kombinasi huruf, angka, dan karakter yang valid.
+
+## Pembagian Tugas Anggota
+
+| Nama Anggota | Tugas & Bagian Pekerjaan |
+|---|---|
+| M. Nasirudin | Mengerjakan Program ruang 1 sd 4 |
+| Helmi Zavelda P | Mengerjakan Flow Node-RED |
+| Efendi Choiri S | Mengerjakan Hardware ruang 1 sd 4 |
+| Mochamad Nizar Abrar |  |
