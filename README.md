@@ -60,7 +60,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 **Tabel Pin:**
 
 | Ruangan / Node | Sensor | Lampu 1 | Lampu 2 |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **Ruang 1** | SHT40 (SDA: GPIO21, SCL: GPIO22) | GPIO 14 | GPIO 27 |
 | **Ruang 2** | SHT30 (SDA: GPIO21, SCL: GPIO22) | GPIO 14 | GPIO 27 |
 | **Ruang 3** | Potensiometer 1 (ADC: GPIO34), Potensiometer (ADC: GPIO34) | GPIO 14 | GPIO 27 |
@@ -143,8 +143,13 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 * **Kendala:** Node-RED tidak bisa terhubung ke broker (Pesan error *Connection failed to broker*).
   * **Solusi:** Memasukkan *Username* dan *Password* pada tab *Security* node MQTT di Node-RED karena broker Mosquitto sudah diatur dengan `allow_anonymous false`.
-* **Kendala:** [Tambahkan kendala lain di sini]
-  * **Solusi:** [Tambahkan solusi di sini]
+* **Kendala:** Teks pada menu navigasi samping UI Node-RED Dashboard (seperti tulisan "Kost keputih") sangat sulit dibaca karena warna font cyan bertabrakan dengan latar belakang putih.
+  * **Solusi:** Mengubah pengaturan tata rupa melalui tab Theme di panel Dashboard Node-RED, dengan mengubah Style menjadi Dark (tema gelap) atau menggelapkan warna Font/Primary agar kontras teks terlihat jelas.
+* **Kendala:** Muncul pesan error no such table: riwayat_suhu di terminal saat mencoba membaca history data dari file klp5_database.db.
+  * **Solusi:** Membuat tabel secara manual terlebih dahulu di dalam terminal SQLite dengan mengeksekusi perintah CREATE TABLE riwayat_suhu (...) untuk mendefinisikan struktur tabel sebelum melakukan query SELECT.
+* **Kendala:**  Koneksi ke broker Mosquitto ditolak karena password yang digunakan hanya berupa dua spasi kosong.
+  * **Solusi:** Mengganti password tersebut dengan kombinasi huruf, angka, dan karakter yang valid.
+
 
 ## Pembagian Tugas Anggota
 
@@ -153,4 +158,4 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | M. Nasirudin | Mengerjakan Program ruang 1 sd 4 |
 | Helmi Zavelda P | Mengerjakan Flow Node-RED |
 | Efendi Choiri S | Mengerjakan Hardware ruang 1 sd 4 |
-| Mochamad Nizar Abrar | Mengerjakan [Misal: UI Dashboard & ESP32 Ruang 4] |
+| Mochamad Nizar Abrar |  |
