@@ -26,20 +26,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 * **Video Demo:** https://youtu.be/uO7uomSXTIM(#) atau buka file [`video.md`](video.md)
 
 ## Arsitektur Sistem
-
-```text
-[Node ESP32 + Sensor DHT22 + LED] 
-        | (WiFi)
-        v
-[Broker MQTT Lokal (Mosquitto dengan Password)] 
-        |
-        v
-[Node-RED (Server)] ---> [SQLite (Database Riwayat)]
-        |
-        v
-[Node-RED Dashboard (Web UI)]
-```
-*(Atau ganti blok teks di atas dengan memanggil gambar arsitektur: `![Arsitektur](docs/images/arsitektur.png)`)*
+![Arsitektur](docs/images/arsitektur.png)
 
 ## Hardware
 > 📌 **Catatan Khusus Hardware & Simulasi:**
