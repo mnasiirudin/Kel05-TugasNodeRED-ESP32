@@ -9,7 +9,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | M. Nasirudin | 2124600062 | Ruang 4 |
 | Helmi Zavelda P | 2124600064 | Ruang 2 |
 | Efendi Choiri S | 2124600084 | Ruang 3 |
-| Mochamad Nizar Abrar | 2124600075 |  |
+| Mochamad Nizar Abrar | 2124600075 | Ruang 1 |
 
 ## Link Video
 
