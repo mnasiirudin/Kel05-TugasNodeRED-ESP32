@@ -58,16 +58,16 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 | Ruangan / Node | Board | Sensor / Input | Lampu 1 (Pin & Modus) | Lampu 2 (Pin & Modus) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ruang 1** | ESP32 Dev Module | SHT40 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
-| **Ruang 2** | ESP32 Dev Module | SHT30 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
-| **Ruang 3** | ESP32 Dev Module | Potensiometer (ADC: GPIO34) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
-| **Ruang 4 (`esp32c3`)** | ESP32-C3 SuperMini | DHT22 (Data: GPIO 4) | GPIO 5 (*Active HIGH*) | GPIO 6 (*Active LOW*) |
+| **Ruang 1** | SHT40 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 2** | SHT30 (SDA: GPIO21, SCL: GPIO22) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 3** | Potensiometer 1 (ADC: GPIO34), Potensiometer (ADC: GPIO34) | GPIO 25 (*Active HIGH*) | GPIO 26 (*Active HIGH*) |
+| **Ruang 4** | DHT22 (Data: GPIO 4) | GPIO 5 (*Active HIGH*) | GPIO 6 (*Active LOW*) |
 
 **Foto Rangkaian (Satu Ruangan):**
 ![Foto Rangkaian](docs/images/rangkaian_ruang.png)
 *(Catatan: Sesuaikan nama dan path gambar dengan yang ada di repository)*
 
-## 6. Tabel Topic Final dan Broker
+## Tabel Topic Final dan Broker
 
 * **Broker yang dipakai:** Mosquitto Localhost
 
@@ -78,19 +78,27 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | Kontrol AC | `pens/klp5/ruang1/ac` | Subscribe dari Node-RED |
 | Kontrol Heater | `pens/klp5/ruang1/heater` | Subscribe dari Node-RED |
 
-## 7. Cara Menjalankan
+## Cara Menjalankan
 
-**A. Sisi Arduino/ESP32:**
-1. Pastikan *library* berikut terpasang di Arduino IDE:
-   * `WiFi.h` (bawaan board ESP32)
-   * `PubSubClient` (oleh Nick O'Leary)
-   * `DHT sensor library` (oleh Adafruit)
-2. Buka kode program `.ino`, lalu ubah variabel berikut:
-   * `WIFI_SSID` dan `WIFI_PASSWORD`
-   * `mqtt_user` dan `mqtt_password` (sesuai akun mosquitto)
-   * Variabel `ROOM` (ganti menjadi `"ruang1"`, `"ruang2"`, dst sesuai hardware-nya).
-3. Lakukan proses *Upload* ke ESP32.
+### A. Sisi Firmware (VS Code & PlatformIO)
 
+1. **Buka Proyek:**
+   - Buka VS Code, pilih menu **File** → **Open Folder...**, lalu buka folder proyek `firmware` (atau `node-redd`).
+
+2. **Konfigurasi Kode (`src/*/main.cpp`):**
+   - Buka file `main.cpp` pada folder node yang akan di-upload (misal `src/esp32c3/main.cpp` untuk Ruang 4).
+   - Sesuaikan konstanta jaringan dan broker di bagian atas file:
+     - `WIFI_SSID` dan `WIFI_PASS`
+     - `BROKER_IP`
+     - `MQTT_USER` dan `MQTT_PASS`
+
+3. **Proses Build & Upload:**
+     Buka Terminal (`Ctrl + ~`) dan jalankan perintah sesuai board target:
+     - **Ruang 1 (SHT40):** `pio run -e esp1 -t upload`
+     - **Ruang 2 (SHT30):** `pio run -e esp2 -t upload`
+     - **Ruang 3 (Potensio):** `pio run -e esp3 -t upload`
+     - **Ruang 4 (ESP32-C3):** `pio run -e esp32c3 -t upload`
+   
 **B. Sisi Node-RED & Database:**
 1. Buka Node-RED, masuk ke *Manage Palette*, dan instal paket:
    * `node-red-dashboard`
@@ -99,15 +107,15 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 3. Sesuaikan *Username* dan *Password* pada node MQTT in/out sesuai keamanan broker Mosquitto. Klik **Deploy**.
 4. **Alamat dashboard:** Buka browser dan akses `http://localhost:1880/ui`
 
-## 8. Screenshot Flow Node-RED dan Dashboard
+## Screenshot Flow Node-RED dan Dashboard
 
 **Flow Node-RED:**
-![Flow Node-RED](docs/images/flow_nodered.png)
+![Flow Node-RED](docs/images/flow_Node-RED.jpeg)
 
 **Dashboard UI:**
-![Dashboard](docs/images/dashboard.png)
+![Dashboard](docs/images/dashboard1.jpg)
 
-## 9. Hasil Pengujian T1-T12
+## Hasil Pengujian T1-T12
 
 | Kode | Deskripsi Pengujian | Hasil (✓ / ×) | Keterangan Singkat |
 |---|---|---|---|
@@ -124,18 +132,14 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | T11 | [Isi deskripsi T11] | [✓] | [Keterangan] |
 | T12 | [Isi deskripsi T12] | [✓] | [Keterangan] |
 
-## 10. Ruangan yang Disimulasikan
-
-* [Isi jika ada anggota yang tidak hadir sehingga ada ESP32 yang memegang simulasi 2 ruangan, atau tulis "Keempat ruangan disimulasikan lengkap" jika 4 alat lengkap]
-
-## 11. Kendala dan Solusi
+## Kendala dan Solusi
 
 * **Kendala:** Node-RED tidak bisa terhubung ke broker (Pesan error *Connection failed to broker*).
   * **Solusi:** Memasukkan *Username* dan *Password* pada tab *Security* node MQTT di Node-RED karena broker Mosquitto sudah diatur dengan `allow_anonymous false`.
 * **Kendala:** [Tambahkan kendala lain di sini]
   * **Solusi:** [Tambahkan solusi di sini]
 
-## 12. Pembagian Tugas Anggota
+## Pembagian Tugas Anggota
 
 | Nama Anggota | Tugas & Bagian Pekerjaan |
 |---|---|
