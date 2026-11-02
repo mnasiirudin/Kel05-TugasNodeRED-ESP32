@@ -1,0 +1,1233 @@
+[
+    {
+        "id": "06c6eaef09c20749",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cdd235b43ae7fd04",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3c77dee44f566480",
+        "type": "ui_tab",
+        "name": "Kost keputih 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "936886b819c32a33",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#405ce7",
+                "baseFont": "Georgia,Georgia,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#050505",
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#405ce7",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#405ce7",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#8496f0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#405ce7",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Georgia,Georgia,serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "70ff15774141fec3",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "3c77dee44f566480",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6a71283613e5e743",
+        "type": "ui_group",
+        "name": "ruang1",
+        "tab": "3c77dee44f566480",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "429d4d2cba8120d5",
+        "type": "ui_tab",
+        "name": "Kost Keputih 2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "126228ea209571d2",
+        "type": "ui_group",
+        "name": "ruang2",
+        "tab": "429d4d2cba8120d5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aae5c767289559e5",
+        "type": "ui_tab",
+        "name": "Kost Keputih 3",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4c16ea1848c9e840",
+        "type": "ui_group",
+        "name": "ruang 3",
+        "tab": "aae5c767289559e5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73762d61ec382947",
+        "type": "ui_tab",
+        "name": "Kost Keputih 4",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a276e5f91f3914e3",
+        "type": "ui_group",
+        "name": "ruang4",
+        "tab": "73762d61ec382947",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d7213546f8bf95d5",
+        "type": "sqlitedb",
+        "db": "klp5_database.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "4bc1014421b94f5b",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/RuangN/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "f4a81fc3e3921221"
+            ]
+        ]
+    },
+    {
+        "id": "4d2dc62033f15e7e",
+        "type": "ui_gauge",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "group": "6a71283613e5e743",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humidity ruang 1",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c8ac7bdde3ea0d3c",
+        "type": "ui_gauge",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "group": "126228ea209571d2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humidity ruang 2",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cc7898db8bc19802",
+        "type": "ui_gauge",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "group": "4c16ea1848c9e840",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humidity ruang 3",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cfa92caeeb42b5f9",
+        "type": "ui_gauge",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "group": "a276e5f91f3914e3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humidity ruang 4",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "5bc49868095c6c2f",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 1",
+        "tooltip": "",
+        "group": "6a71283613e5e743",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang1/lamp1",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "d6bb0677946636b8"
+            ]
+        ]
+    },
+    {
+        "id": "f2005a8ebdee84bd",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 2",
+        "tooltip": "",
+        "group": "6a71283613e5e743",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang1/lamp2",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 300,
+        "wires": [
+            [
+                "ce394e60f4c56d5e"
+            ]
+        ]
+    },
+    {
+        "id": "18341569241cb51a",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 1",
+        "tooltip": "",
+        "group": "126228ea209571d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang2/lamp1",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "e4d9dd26519a44c7"
+            ]
+        ]
+    },
+    {
+        "id": "6f85900159da0c8f",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 2",
+        "tooltip": "",
+        "group": "126228ea209571d2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang2/lamp2",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 420,
+        "wires": [
+            [
+                "e65072e52c5e53cf"
+            ]
+        ]
+    },
+    {
+        "id": "b3e0d2c7f04b8d7d",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 1",
+        "tooltip": "",
+        "group": "4c16ea1848c9e840",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang3/lamp1",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "d22db54cd929652e"
+            ]
+        ]
+    },
+    {
+        "id": "e05eb6913b50d23e",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 2",
+        "tooltip": "",
+        "group": "4c16ea1848c9e840",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang3/lamp2",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 540,
+        "wires": [
+            [
+                "f8bae1ef2ab4a492"
+            ]
+        ]
+    },
+    {
+        "id": "6f986966486e759e",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 1",
+        "tooltip": "",
+        "group": "a276e5f91f3914e3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang4/lamp1",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 620,
+        "wires": [
+            [
+                "747c09fcb4343f88"
+            ]
+        ]
+    },
+    {
+        "id": "e834f5f7fb838239",
+        "type": "ui_switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "label": "Lampu 2",
+        "tooltip": "",
+        "group": "a276e5f91f3914e3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "pens/klp5/ruang4/lamp2",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "c3dc2409c608d681"
+            ]
+        ]
+    },
+    {
+        "id": "d22db54cd929652e",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang3/lamp1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f4a81fc3e3921221",
+        "type": "function",
+        "z": "06c6eaef09c20749",
+        "name": "function 1",
+        "func": "const parts = msg.topic.split(\"/\");\nmsg.topic = parts[2];\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "d072fc1023de1d46"
+            ]
+        ]
+    },
+    {
+        "id": "d072fc1023de1d46",
+        "type": "ui_chart",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "group": "70ff15774141fec3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c7a10633145f05a",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/RuangN/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "850187e637d03e58"
+            ]
+        ]
+    },
+    {
+        "id": "850187e637d03e58",
+        "type": "switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ruang1",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang2",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang3",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang4",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "4d2dc62033f15e7e"
+            ],
+            [
+                "c8ac7bdde3ea0d3c"
+            ],
+            [
+                "cc7898db8bc19802"
+            ],
+            [
+                "cfa92caeeb42b5f9"
+            ]
+        ]
+    },
+    {
+        "id": "6a9e08a9a96b5863",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/RuangN/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 60,
+        "wires": [
+            [
+                "190aefa2ca165fa0"
+            ]
+        ]
+    },
+    {
+        "id": "190aefa2ca165fa0",
+        "type": "switch",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ruang1",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang2",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang3",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ruang4",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "b9694b02af49daf3"
+            ],
+            [
+                "b3dcdab71d565572"
+            ],
+            [
+                "323f17e0e8c0e901"
+            ],
+            [
+                "368908c1359024e8"
+            ]
+        ]
+    },
+    {
+        "id": "b9694b02af49daf3",
+        "type": "ui_text",
+        "z": "06c6eaef09c20749",
+        "group": "70ff15774141fec3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Ruang 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b3dcdab71d565572",
+        "type": "ui_text",
+        "z": "06c6eaef09c20749",
+        "group": "70ff15774141fec3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Ruang 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "323f17e0e8c0e901",
+        "type": "ui_text",
+        "z": "06c6eaef09c20749",
+        "group": "70ff15774141fec3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Ruang 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "368908c1359024e8",
+        "type": "ui_text",
+        "z": "06c6eaef09c20749",
+        "group": "70ff15774141fec3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status Ruang 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f8bae1ef2ab4a492",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang3/lamp2",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e65072e52c5e53cf",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang2/lamp2",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e4d9dd26519a44c7",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang2/lamp1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ce394e60f4c56d5e",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang1/lamp2",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d6bb0677946636b8",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang1/lamp1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "747c09fcb4343f88",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang4/lamp1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c3dc2409c608d681",
+        "type": "mqtt out",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang4/lamp2",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cdd235b43ae7fd04",
+        "x": 770,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c2d1aab7e50e6117",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1050,
+        "y": 300,
+        "wires": [
+            [
+                "dbe93a25b8dc8a12"
+            ]
+        ]
+    },
+    {
+        "id": "dbe93a25b8dc8a12",
+        "type": "debug",
+        "z": "06c6eaef09c20749",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9bc2fd648df50dd4",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang3/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1100,
+        "y": 460,
+        "wires": [
+            [
+                "2b0d873406022680"
+            ]
+        ]
+    },
+    {
+        "id": "2b0d873406022680",
+        "type": "function",
+        "z": "06c6eaef09c20749",
+        "name": "function 2",
+        "func": "var suhu = parseFloat(msg.payload);\nvar parts = msg.topic.split(\"/\");\nvar namaRuang = parts[2]; \n\nif (msg.topic.includes(\"temperature\")) {\n    if (suhu > 32) {\n        // Jika panas, tampilkan peringatan\n        msg.payload = \"⚠️ PERINGATAN! Suhu di \" + namaRuang.toUpperCase() + \" panas: \" + suhu + \" °C\";\n        return msg;\n    } else {\n        // Jika normal (di bawah / sama dengan 32 °C), tampilkan status aman\n        msg.payload = \"✅ Suhu \" + namaRuang.toUpperCase() + \" Normal (\" + suhu + \" °C)\";\n        return msg;\n    }\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 520,
+        "wires": [
+            [
+                "97f6ec65d717057f"
+            ]
+        ]
+    },
+    {
+        "id": "97f6ec65d717057f",
+        "type": "ui_text",
+        "z": "06c6eaef09c20749",
+        "group": "4c16ea1848c9e840",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ruang3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1120,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2c676519510d1e57",
+        "type": "mqtt in",
+        "z": "06c6eaef09c20749",
+        "name": "",
+        "topic": "pens/klp5/ruang3/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cdd235b43ae7fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1080,
+        "y": 680,
+        "wires": [
+            [
+                "cf525c19ac10090e"
+            ]
+        ]
+    },
+    {
+        "id": "cf525c19ac10090e",
+        "type": "function",
+        "z": "06c6eaef09c20749",
+        "name": "function 3",
+        "func": "var suhu = parseFloat(msg.payload);\nvar waktu = new Date().toISOString(); // Mengambil waktu saat ini\n\n// Perintah SQL untuk menyimpan data ke tabel bernama 'riwayat_suhu'\nmsg.topic = \"INSERT INTO riwayat_suhu (waktu, nilai_suhu) VALUES ('\" + waktu + \"', \" + suhu + \")\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 740,
+        "wires": [
+            [
+                "7dd01934fa78f940"
+            ]
+        ]
+    },
+    {
+        "id": "7dd01934fa78f940",
+        "type": "sqlite",
+        "z": "06c6eaef09c20749",
+        "mydb": "d7213546f8bf95d5",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 1150,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2427af7f8b26ef18",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-sqlite": "2.0.1"
+        }
+    }
+]
