@@ -13,7 +13,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 ## Link Video
 
-* **Video Presentasi:** [https://youtu.be/uO7uomSXTIM](https://youtu.be/tvDQs3KuBPE) atau buka file [`video/link.md`](video/link.md)
+* **Video Presentasi:** [https://youtu.be/tvDQs3KuBPE](https://youtu.be/tvDQs3KuBPE) atau buka file [`video/link.md`](video/link.md)
 * **Video Demo:** [https://youtu.be/uO7uomSXTIM](https://youtu.be/uO7uomSXTIM) atau buka file [`video/link.md`](video/link.md)
 
 ## Arsitektur Sistem
