@@ -55,7 +55,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 **Foto Rangkaian (Satu Ruangan):**
 ![Foto Rangkaian](docs/images/Ruang1.jpg)
-*(Catatan: Sesuaikan nama dan path gambar dengan yang ada di repository)*
+
 
 ## Tabel Topic Final dan Broker
 > 📌 **Keterangan:** Huruf `N` pada `ruangN` mewakili nomor identitas ruangan (1, 2, 3, atau 4). 
