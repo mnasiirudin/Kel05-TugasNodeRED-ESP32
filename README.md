@@ -13,7 +13,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 ## Link Video
 
-* **Video Presentasi:** [Masukkan Link Video Presentasi di Sini](#)
+* **Video Presentasi:** [https://youtu.be/uO7uomSXTIM](https://youtu.be/tvDQs3KuBPE) atau buka file [`video/link.md`](video/link.md)
 * **Video Demo:** [https://youtu.be/uO7uomSXTIM](https://youtu.be/uO7uomSXTIM) atau buka file [`video/link.md`](video/link.md)
 
 ## Arsitektur Sistem
@@ -54,7 +54,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 | **Ruang 4** | DHT22 (GPIO 3) | GPIO 2 | GPIO 8 |
 
 **Foto Rangkaian (Satu Ruangan):**
-![Foto Rangkaian](docs/images/rangkaian_ruang.png)
+![Foto Rangkaian](docs/images/Ruang1.jpg)
 *(Catatan: Sesuaikan nama dan path gambar dengan yang ada di repository)*
 
 ## Tabel Topic Final dan Broker
@@ -141,7 +141,7 @@ Sistem *Internet of Things* (IoT) untuk memantau suhu dan kelembapan secara *rea
 
 | Nama Anggota | Tugas & Bagian Pekerjaan |
 |---|---|
-| M. Nasirudin | Mengerjakan Program ruang 1 sd 4 |
-| Helmi Zavelda P | Mengerjakan Flow Node-RED |
-| Efendi Choiri S | Mengerjakan Hardware ruang 1 sd 4 |
-| Mochamad Nizar Abrar |  |
+| M. Nasirudin | Mengerjakan Program ruang 1 sd 4, PPT, Laporan |
+| Helmi Zavelda P | Mengerjakan Flow Node-RED, PPT, Laporan |
+| Efendi Choiri S | Mengerjakan Hardware ruang 1 sd 4, PPT, Laporan |
+| Mochamad Nizar Abrar | PPT, Laporan |
